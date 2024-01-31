@@ -86,4 +86,13 @@ p {
 }
 .section2-titre {
   color: #3b8e46;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 30px;
+}
+.section2-para {
+  text-align:center;
+  margin-top: 30px;
+  font-size: 1.5rem;
+  line-height: 1.2;
 }
