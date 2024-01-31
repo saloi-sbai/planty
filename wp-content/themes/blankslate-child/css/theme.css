@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+/* Import de la font Roboto depuis Google Fonts et on l'applique sur tous les éléments de la page */
+body * {
+  font-family: "Syne", sans-serif;
+}
+/* On applique un gris plus clair sur les paragraphes */
+p {
+  color: #313332;
+}
+/* La classe 'hover-effect' permettra de créer un effet de zoom quand l'on passera la souris par dessus les elements images enfants  */
+.hover-effect img {
+  transition: all 0.33s ease-in-out;
+  transform: scale(1) translateY(0px);
+}
+.hover-effect img:hover {
+  transition: all 0.33s ease-in-out;
+  transform: scale(1.05) translateY(-10px);
+}
+.entry-title,
+.post-edit-link {
+  display: none;
+}
+
+.home {
+  height: 100vh;
+  width: 100vw;
+}
+
+.principale {
+  display: flex;
+  flex-direction: column;
+}
+
+/************** menu ***************/
+.wp-block-navigation .wp-block-navigation-item__label {
+  margin-left: 2rem;
+}
+.commande {
+  height: 80px;
+  padding-top: 20px;
+  background-color: #dc9f96 !important;
+}
+
+.wp-block-buttons > .wp-block-button.has-custom-width .wp-block-button__link {
+  text-decoration: none !important;
+  color: #fff !important;
+  background-color: #dc9f96 !important;
+}
+
+/***************sections *************/
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*************** section 1 *************/
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #e3d9d0;
+  border-radius: 0 0 15% 15%;
+  box-shadow: 0 10px 0 #dcd5cf;
+  gap: 70px;
+}
+
+.mon-titre {
+  color: #3b8e46;
+  font-weight: bold;
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.image-principale {
+  padding-bottom: 70px;
+}
+
+/*************** section 2 *************/
+.section2 {
+  background-color: #fff;
+}
+.section2-titre {
+  color: #3b8e46;
+}
