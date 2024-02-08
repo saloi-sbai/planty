@@ -1,9 +1,11 @@
 </main>
-<?php get_sidebar(); ?>
-</div>
 <footer id="footer" role="contentinfo">
     <div id="footer">
-        <a href="#">Mentions légales</a>
+        <?php
+        wp_nav_menu(array(
+            'footer_menu' => 'primary_menu',
+        ));
+        ?>
     </div>
 </footer>
 </div>

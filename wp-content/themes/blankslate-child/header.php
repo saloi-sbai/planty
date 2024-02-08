@@ -9,7 +9,19 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-    <div id="wrapper" class="hfeed">
 
-        <div id="container">
-            <main id="content" role="main">
+    <div id="container">
+        <header>
+            <div class="logo"><?php
+                                the_custom_logo();
+                                ?></div>
+            <nav>
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'primary_menu',
+                ))
+                ?>
+            </nav>
+
+        </header>
+        <main>

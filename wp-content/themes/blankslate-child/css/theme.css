@@ -3,6 +3,12 @@
 body * {
   font-family: "Syne", sans-serif;
 }
+
+/* cette div container se trouve dans le fichier header.php */
+#container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 /* On applique un gris plus clair sur les paragraphes */
 p {
   color: #313332;
@@ -21,19 +27,18 @@ p {
   display: none;
 }
 
-/* .home {
-  height: 100vh;
-  width: 100vw;
-} */
-
 /************** menu de navigation ***************/
 .nav-bar {
   height: 80px;
-  width: 100vw;
+  /* width: 100vw; */
   background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.logo img {
+  height: 19px;
+  width: auto;
 }
 
 .menu {
@@ -71,7 +76,7 @@ p {
   background-color: #e3d9d0;
   border-radius: 0 0 15% 15%;
   box-shadow: 0 10px 0 #dcd5cf;
-  width: 100vw;
+  /* width: 100vw; */
   height: 890px;
 }
 .titre1 {
@@ -175,7 +180,7 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100vw;
+  /* width: 100vw; */
   margin-left: 4rem;
 }
 .colonne {
@@ -213,14 +218,41 @@ p {
 }
 footer {
   height: 80px;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 19px;
+}
+
+/********************************** page nous rencontrer ********************************/
+/************************ section 1  *******************/
+.bloc-rencontre {
+  background-color: #ece2da;
+  border-radius: 0% 0% 42% 50% / 25% 25% 17% 17%;
+}
+.titre-bloc-rencontrer {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 46px;
   letter-spacing: 0em;
-  padding-top: 30px;
+  color: #d2776a;
 }
-footer a {
-  text-decoration: none;
-  color: #313332;
+.para-bloc-rencontre {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  width: 50%;
+  color: #000000;
 }
+/********************* section 2 *******************/
+.titre-equipe {
+font-size: 30px;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: center;
+color: #000000;
+
+
+}
+
+
+
+/****************** section 3 ************************/
