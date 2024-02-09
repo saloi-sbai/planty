@@ -11,11 +11,11 @@
     <?php wp_body_open(); ?>
 
     <div id="container">
-        <header>
+        <header class="nav-bar">
             <div class="logo"><?php
                                 the_custom_logo();
                                 ?></div>
-            <nav>
+            <nav class="menu">
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'primary_menu',
