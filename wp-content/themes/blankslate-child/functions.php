@@ -34,3 +34,14 @@ if (!function_exists('mytheme_register_nav_menu')) {
     }
     add_action('after_setup_theme', 'mytheme_register_nav_menu', 0);
 }
+
+// hook
+
+add_filter('wp_nav_menu_items', 'add_extra_item_to_nav_menu', 10, 2);
+function add_extra_item_to_nav_menu($items, $args)
+{
+    if (is_user_logged_in() && $args->menu === 'menu-principale') {
+        $items .= '<li class="wt_menu_item_user_avatar"><a href="/my-account"></a></li>';
+    }
+    return $items;
+}

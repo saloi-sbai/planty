@@ -232,6 +232,23 @@ footer {
   border-radius: 0% 0% 42% 50% / 25% 25% 17% 17%;
   height: 50vh;
 }
+.bloc-fleur {
+  bottom: 15%;
+  left: 10%;
+  position: relative;
+}
+.bloc-rencontre img {
+  position: relative;
+  width: 150px;
+  height: 140px;
+  rotate: -70deg;
+}
+.section1-rencontre {
+  padding-top: 4rem;
+  padding-bottom: 20px;
+  width: 70%;
+  margin-left: 1rem;
+}
 
 .titre-bloc-rencontrer {
   font-size: 38px;
@@ -249,19 +266,85 @@ footer {
   color: #000000;
 }
 /********************* section 2 *******************/
+.bloc_equipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 70px;
+}
 .titre-equipe {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   letter-spacing: 0em;
+  color: #000000;
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.equipe-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+}
+.prenom-equipe {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 20px;
+  color: #000000;
+}
+.metier-equipe {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
   text-align: center;
   color: #000000;
+  margin-top: 15px;
+}
+.image_bloc_equipe {
+  position: absolute;
+  right: 60px;
+  top: 280px;
 }
 
 /****************** section 3 ************************/
 .bloc-contact {
   background-color: #ece2da;
 }
+.wpcf7-form p {
+  padding-bottom: 20px;
+}
+
+.wpcf7-form p label {
+  padding-bottom: 60px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+
+.wpcf7-form input {
+  margin-top: 10px;
+  border-radius: 7px;
+  border: none;
+  width: 383px;
+  height: 71px;
+}
+.wpcf7-form textarea {
+  margin-top: 10px;
+  resize: none;
+}
+
 .titre-contacte {
   font-size: 30px;
   font-weight: 700;
@@ -269,37 +352,65 @@ footer {
   letter-spacing: 0em;
   text-align: center;
   color: #000000;
+  padding-top: 70px;
+  margin-bottom: 40px;
 }
 .wp-block-contact-form-7-contact-form-selector {
   display: flex;
   justify-content: center;
 }
-.wpcf7-form-control {
-  border: none;
-  width: 383px;
-  height: 71px;
-  border-radius: 7px;
-}
-/* .wpcf7 {
-  background-color: #3b8e46;
-} */
 .wpcf7-textarea {
   width: 383px;
   height: 237px;
+  border-radius: 7px;
+  border: none;
+  position: absolute;
+  z-index: 2;
 }
- .wpcf7-submit {
+
+.btn-send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-send p input {
   width: 198px;
   height: 55px;
-  background-color: #E0B9B4;
-  border-radius: 7px !important;
- }
- label {
-font-size: 20px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
-color: #000000;
+  position: relative;
+  z-index: 5;
+  bottom: -230px;
+  margin-top: 25px;
+}
 
- }
- 
+.send {
+  background-color: #e0b9b4;
+  color: #fff;
+}
+
+.image-form {
+  position: relative;
+  left: 30%;
+  bottom: 15%;
+  z-index: 1;
+}
+.groupe-canette_form {
+  margin-top: 80px;
+}
+body {
+  overflow-x: hidden;
+}
+/********************************************* test ***************************************/
+/* .bloc_ruits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+ } */
+/* .fruit {
+  width: 50%;
+ } */
+/* .fruit_fraise {
+  width: 100px;
+  height: 280px;
+ } */
