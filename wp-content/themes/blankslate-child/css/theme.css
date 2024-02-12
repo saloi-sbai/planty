@@ -400,17 +400,64 @@ footer {
 body {
   overflow-x: hidden;
 }
-/********************************************* test ***************************************/
-/* .bloc_ruits {
+
+/***************************************** page commander ********************************************/
+.cmd {
+  background-color: #3b8e46;
+  /* max-width: 1440px;
+  margin: 0 auto; */
+}
+.cmd-titre {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+.cmd-images h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+.images-fruits {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.fruit p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 10px;
- } */
-/* .fruit {
-  width: 50%;
- } */
-/* .fruit_fraise {
-  width: 100px;
-  height: 280px;
- } */
+}
+.fruit img {
+  width: 193.29px;
+  height: 128.86px;
+}
+.fruit input {
+  width: 39px;
+  height: 56px;
+}
+.fruits {
+  font-size:x-large;
+}
+
+.infos h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  color: #fff;
+}
+.infos-livraison {
+  display: flex;
+}
