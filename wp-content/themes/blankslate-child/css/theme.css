@@ -320,6 +320,10 @@ footer {
 .bloc-contact {
   background-color: #ece2da;
 }
+.wp-block-group__inner-container .wp-block-contact-form-7-contact-form-selector {
+  background-color: #ece2da;
+}
+
 .wpcf7-form p {
   padding-bottom: 20px;
 }
