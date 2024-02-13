@@ -130,9 +130,7 @@ p {
   margin-top: 60px;
 }
 /************* section 3 *****************/
-.wp-block-contact-form-7-contact-form-selector{
-   background-color: #3b8e46;
-}
+
 .bloc-gout {
   background-color: #dcd5cf;
   height: 1350px;
@@ -405,10 +403,8 @@ body {
 }
 
 /***************************************** page commander ********************************************/
-.cmd {
-  background-color: #3b8e46;
-  /* max-width: 1440px;
-  margin: 0 auto; */
+.wp-block-contact-form-7-contact-form-selector{
+   background-color: #3b8e46;
 }
 .cmd-titre {
   font-size: 38px;
@@ -417,6 +413,8 @@ body {
   letter-spacing: 0em;
   text-align: center;
   color: #fff;
+  margin-bottom: 70px;
+  padding-top: 70px;
 }
 .cmd-images h2 {
   font-size: 30px;
@@ -505,7 +503,7 @@ body {
 }
 
 .infos input {
-  height: 3rem;
+  height: 3.5rem;
   border: none;
   border-radius: 7px;
   width: 100%;
@@ -531,6 +529,7 @@ body {
   width: 198px;
   height: 55px;
   border-radius: 5px;
+  margin-bottom: 70px;
 }
 .btn p input:hover {
   background-color: #C02E44;
