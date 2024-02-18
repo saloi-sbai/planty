@@ -30,7 +30,6 @@ p {
 /************** menu de navigation ***************/
 .nav-bar {
   height: 80px;
-  /* width: 100vw; */
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -74,23 +73,19 @@ p {
 /*************** section 1 *************/
 .groupe-pricipale {
   background-color: #e3d9d0;
-  border-radius: 0 0 15% 15%;
+  border-radius: 25% 25% 42% 48% / 0% 0% 9% 8%;
   box-shadow: 0 10px 0 #dcd5cf;
-  /* width: 100vw; */
-  height: 890px;
+  /* height: 890px; */
 }
-.titre1 {
-  color: #3b8e46;
-  text-align: center;
-  font-size: 2.3rem;
-  font-weight: 800;
-  line-height: 46px;
-  letter-spacing: 0em;
-  text-transform: uppercase;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 80px;
+.titre-boisson {
+font-size: 38px;
+font-weight: 800;
+line-height: 46px;
+letter-spacing: 0em;
+text-align: center;
+color: #3B8E46;
+padding-top: 100px;
+margin-bottom: 70px;
 }
 
 .canette {
@@ -100,26 +95,29 @@ p {
 .droite {
   position: absolute;
   right: 27%;
-  top: 45%;
+  top: 70%;
 }
 .gauche {
   position: absolute;
   left: 27%;
-  top: 45%;
+  top: 70%;
 }
 
 /*************** section 2 *************/
 .description {
   background-color: #fff;
-  height: 360px;
 }
 .description-titre {
   color: #3b8e46;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
   padding-top: 30px;
   margin-top: 40px;
 }
+
 .description-para {
   text-align: center;
   margin-top: 30px;
@@ -128,17 +126,18 @@ p {
   font-weight: 400;
   letter-spacing: 0em;
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 /************* section 3 *****************/
 
 .bloc-gout {
   background-color: #dcd5cf;
-  height: 1350px;
+  /* height: 1350px; */
   border-radius: 0% 0% 100% 100% / 97% 97% 3% 3%;
 }
 .titre-gouts {
   color: #d2776a;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
   text-align: center;
   line-height: 36px;
@@ -146,11 +145,36 @@ p {
   margin-bottom: 20px;
 }
 .parag-gouts {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
   margin-bottom: 50px;
+}
+/* .groupe-images-fruits > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+} */
+/* .groupe-images-fruits figure {
+  flex-basis: 50%; */
+  /* width: 250px;
+  height: 200px; */
+  /* object-fit: cover; */
+  /* padding: 5px; */
+/* } */
+/* .galerie-fruits {
+  padding:0px 200px 0px  200px ;
+} */
+/* .image-fruit {
+  object-fit: cover;
+  padding: 10px;
+} */
+.colonne_fruits {
+  padding:  60px 90px 60px 90px;
 }
 
 .wp-block-button__link,
@@ -181,12 +205,10 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* width: 100vw; */
   margin-left: 4rem;
 }
 .colonne {
   display: flex;
-  /* width: 20vw; */
 }
 .image-avis {
   width: 126.28px;
