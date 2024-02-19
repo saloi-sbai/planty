@@ -28,6 +28,7 @@ p {
 }
 
 /************** menu de navigation ***************/
+
 .nav-bar {
   height: 80px;
   background-color: #fff;
@@ -43,6 +44,7 @@ p {
 .menu {
   text-transform: capitalize;
   display: flex;
+  align-items: center;
   justify-content: end;
   flex-grow: 2;
 }
@@ -52,22 +54,29 @@ p {
   color: #313332;
   text-decoration: none;
 }
-.commande-groupe {
+
+.menu a:hover {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.commander {
   background-color: #dc9f96;
-  height: 80px;
+  order: 2;
   width: 236px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.commande-groupe a {
-  text-decoration: none;
+.commander a {
   color: #fff;
-  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
 }
-.commande-groupe:hover {
-  background-color: brown;
+.commander:hover {
+  background-color: #c02e44;
 }
 
 /*************** accueil - section 1 *************/
@@ -79,20 +88,8 @@ p {
   width: 100vw;
 }
 
-/*.bloc_canette_feuille {
-  background-color: #e3d9d0;
-  border-radius: 25% 25% 42% 48% / 0% 0% 9% 8%;
-  box-shadow: 0 10px 0 #dcd5cf;
-  max-width: 1440px;
-  width: 100vw;
-}
- .groupe-pricipale {
-  background-color: #e3d9d0;
-  border-radius: 25% 25% 42% 48% / 0% 0% 9% 8%;
-  box-shadow: 0 10px 0 #dcd5cf;
-} */
 .titre-boisson {
-  font-size: 38px;
+  font-size: 2.3rem;
   font-weight: 800;
   line-height: 46px;
   letter-spacing: 0em;
@@ -209,46 +206,6 @@ p {
   background-color: #c02e44;
 }
 
-/*
-.wp-block-button__link a {
-  font-size: 15px;
-  background-color: violet;
-}
-
- .groupe-images-fruits > div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap:nowrap;
-  width: 100%;
-  justify-content: center;
-  gap: 20px;
-} */
-/* .groupe-images-fruits figure {
-  flex-basis: 50%; */
-*/
-/* width: 250px;
-  height: 200px; */
-/* object-fit: cover; */
-/* padding: 5px; */
-/* }
-/* .galerie-fruits {
-  padding:0px 200px 0px  200px ;
-} */
-/* .image-fruit {
-  object-fit: cover;
-  padding: 10px;
-} */
-/* .colonne_fruits {
-  padding: 60px 90px 60px 90px;
-} */
-
-/* .wp-block-button__link,
-.wp-element-button {
-  background-color: #e0b9b4 !important;
-  
-  
-  margin-top: 40px;
-} */
 /****************** section 4 ******************/
 .bloc-avis {
   display: flex;
@@ -339,7 +296,7 @@ footer {
 }
 
 .titre-bloc-rencontrer {
-  font-size: 38px;
+  font-size: 2.2rem;
   font-weight: 800;
   line-height: 46px;
   letter-spacing: 0em;
@@ -350,8 +307,9 @@ footer {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
-  width: 50%;
+  width: 60%;
   color: #000000;
+  padding-top: 20px;
 }
 /********************* section 2 *******************/
 .bloc_equipe {
@@ -467,6 +425,10 @@ footer {
   justify-content: center;
 }
 
+.btn-send p span {
+  display: none;
+}
+
 .btn-send p input {
   width: 198px;
   height: 55px;
@@ -479,11 +441,15 @@ footer {
 .send {
   background-color: #e0b9b4;
   color: #fff;
+  font-size: 17px;
+}
+.send:hover {
+  background-color: #c02e44;
 }
 
 .image-form {
   position: relative;
-  left: 30%;
+  left: -13%;
   bottom: 15%;
   z-index: 1;
 }
