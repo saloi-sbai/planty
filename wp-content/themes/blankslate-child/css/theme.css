@@ -40,6 +40,9 @@ p {
   height: 19px;
   width: auto;
 }
+nav .menu {
+  width: 100%;
+}
 
 .menu {
   text-transform: capitalize;
@@ -77,6 +80,14 @@ p {
 }
 .commander:hover {
   background-color: #c02e44;
+}
+
+.menu label {
+  display: none;
+}
+.menu label,
+#toggle {
+  display: none;
 }
 
 /*************** accueil - section 1 *************/
@@ -588,4 +599,58 @@ body {
 }
 .btn p input:hover {
   background-color: #c02e44;
+}
+
+/******************************** tablette page accueil *****************************/
+@media screen and (max-width: 950px) {
+  nav {
+    height: 60px;
+  }
+  nav .menu {
+    display: none;
+  }
+  /* nav .menu {
+    display: none;
+    flex-direction: column;
+    height: 220px;
+  } */
+  nav .menu a {
+    width: 50%;
+  }
+  .menu label {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 40px;
+    color: #000000;
+    cursor: pointer;
+    order: 2;
+  }
+  #toggle:checked + .main-menu > div > ul {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 30px;
+    right: 40vw;
+    top: 1rem;
+  }
+  .main-menu > div > ul {
+    order: 3;
+  }
+  .main-menu > div {
+    position: absolute;
+    right: 1rem;
+  }
+  .menu-item {
+    margin: 10px;
+  }
+
+  .droite {
+    display: none;
+  }
+  .gauche {
+    display: none;
+  }
 }

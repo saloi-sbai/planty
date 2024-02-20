@@ -15,12 +15,19 @@
             <div class="logo"><?php
                                 the_custom_logo();
                                 ?></div>
+
             <nav class="menu">
-                <?php
-                wp_nav_menu(array(
-                    'theme_location' => 'primary_menu',
-                ))
-                ?>
+                <label class="label-toggle" for="toggle">☰</label>
+                <input type="checkbox" id="toggle">
+                <div class="main-menu">
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'primary_menu',
+                    ))
+                    ?>
+
+                </div>
+
             </nav>
 
         </header>
