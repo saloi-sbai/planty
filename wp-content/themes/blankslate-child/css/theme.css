@@ -607,7 +607,8 @@ body {
 }
 
 /******************************** tablette page accueil *****************************/
-@media screen and (max-width: 950px) {
+/* media menu */
+@media screen and (max-width: 1024px) {
   nav {
     height: 60px;
   }
@@ -647,13 +648,6 @@ body {
   .menu-item {
     margin: 10px;
   }
-
-  .droite {
-    display: none;
-  }
-  .gauche {
-    display: none;
-  }
 }
 
 /*************************************** page nous rencontrer *************************/
@@ -690,7 +684,7 @@ body {
   }
   .commander a {
     color: #313332;
-    font-size:small;
+    font-size: small;
   }
   #container {
     width: fit-content;
@@ -728,18 +722,16 @@ body {
 
 /********************** mode tablette ******************/
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-.titre-bloc-rencontrer {
+  .titre-bloc-rencontrer {
     font-size: calc(100% + 1vw);
   }
   .image_bloc_equipe {
-    position: absolute;
-    right: 60px;
-    top: 850px;
+    display: none;
   }
   .image-form {
-  position: relative;
-  left: -25%;
-  bottom: 15%;
-  z-index: 1;
-}
+    position: relative;
+    left: -20%;
+    bottom: 15%;
+    z-index: 1;
+  }
 }
