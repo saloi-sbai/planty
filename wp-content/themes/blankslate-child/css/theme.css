@@ -35,6 +35,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* max-width: 1440px; */
+  /* width: 100%; */
 }
 .logo img {
   height: 19px;
@@ -91,6 +93,9 @@ nav .menu {
 }
 
 /*************** accueil - section 1 *************/
+/* .groupe_accueil {
+  max-width: 1440px; 
+} */
 .bloc1 {
   background-color: #e3d9d0;
   border-radius: 25% 25% 42% 48% / 0% 0% 9% 8%;
@@ -225,7 +230,7 @@ nav .menu {
   justify-content: space-between;
 }
 .titre-avis {
-  font-size: 30px;
+  font-size: 1.8rem;
   font-weight: 800;
   line-height: 36px;
   letter-spacing: 0em;
@@ -609,11 +614,7 @@ body {
   nav .menu {
     display: none;
   }
-  /* nav .menu {
-    display: none;
-    flex-direction: column;
-    height: 220px;
-  } */
+
   nav .menu a {
     width: 50%;
   }
@@ -653,4 +654,92 @@ body {
   .gauche {
     display: none;
   }
+}
+
+/*************************************** page nous rencontrer *************************/
+
+/* https://academy.lotincorp.biz/lessentiel-du-responsive-design-la-gestion-des-ecrans/ */
+
+/*@media screen and (max-width: 480px)*/
+/*@media screen and (min-width: 481px) and (max-width: 768px)*/
+/*@media screen and (min-width: 769px) and (max-width: 1024px)*/
+/*@media screen and (min-width: 1025px)*/
+
+/********* mode smart phone ********/
+
+@media screen and (max-width: 768px) {
+  .logo > a > img {
+    height: 2vh;
+    width: 30vw;
+    padding-left: 0.5rem;
+  }
+  #toggle:checked + .main-menu > div > ul {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 30px;
+    right: 2vw;
+    top: 1rem;
+  }
+  .menu a {
+    padding-left: 1.5rem;
+    text-decoration: none;
+  }
+  .commander {
+    background-color: #fff;
+  }
+  .commander a {
+    color: #313332;
+    font-size:small;
+  }
+  #container {
+    width: fit-content;
+  }
+  .bloc-rencontre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+  }
+  .section1-rencontre {
+    padding-top: 0;
+  }
+
+  .image-rencontre {
+    display: none;
+  }
+  .titre-bloc-rencontrer {
+    font-size: calc(100% + 1vw);
+  }
+  .para-bloc-rencontre {
+    width: 100%;
+  }
+  .image_bloc_equipe {
+    display: none;
+  }
+  .equipe-card {
+    padding-left: 0;
+  }
+  .wpcf7-form > p > label > span > input,
+  .wpcf7-form > p > label > span > textarea {
+    width: 90vw;
+  }
+}
+
+/********************** mode tablette ******************/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+.titre-bloc-rencontrer {
+    font-size: calc(100% + 1vw);
+  }
+  .image_bloc_equipe {
+    position: absolute;
+    right: 60px;
+    top: 850px;
+  }
+  .image-form {
+  position: relative;
+  left: -25%;
+  bottom: 15%;
+  z-index: 1;
+}
 }
