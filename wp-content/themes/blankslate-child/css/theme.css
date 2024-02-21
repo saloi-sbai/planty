@@ -558,7 +558,7 @@ body {
   content: "";
   position: absolute;
   border-left: 1px solid #fff;
-  right: -1rem;
+  right: -3rem;
   height: 80%;
   top: 15%;
 }
@@ -606,8 +606,8 @@ body {
   background-color: #c02e44;
 }
 
-/******************************** tablette page accueil *****************************/
-/* media menu */
+
+/********************** media menu *******************/
 @media screen and (max-width: 1024px) {
   nav {
     height: 60px;
@@ -718,9 +718,30 @@ body {
   .wpcf7-form > p > label > span > textarea {
     width: 90vw;
   }
+  /************ page commandrer ***********/
+  .cmd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .infos-livraison {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+  }
+  .infos input {
+    width: 100%;
+  }
+  ::after {
+    display: none;
+  }
 }
 
 /********************** mode tablette ******************/
+
+/********* page nous rencontrer ***********/
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .titre-bloc-rencontrer {
     font-size: calc(100% + 1vw);
@@ -734,4 +755,33 @@ body {
     bottom: 15%;
     z-index: 1;
   }
+  /******************************* page commander **************************/
+  .cmd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .infos-livraison {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+  }
+  .infos input {
+    width: 100%;
+  }
+  ::after {
+    display: none;
+  }
+}
+@media screen and (min-width: 1025px) {
+.infos-livraison {
+  display: flex;
+  width: fit-content;
+  gap: 6rem;
+}
+.infos h2 {
+  width: auto;
+}
 }
