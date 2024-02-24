@@ -35,8 +35,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* max-width: 1440px; */
-  /* width: 100%; */
 }
 .logo img {
   height: 19px;
@@ -84,22 +82,12 @@ nav .menu {
   background-color: #c02e44;
 }
 
-.menu label {
-  display: none;
-}
-.menu label,
-#toggle {
-  display: none;
-}
-
 /*************** accueil - section 1 *************/
-/* .groupe_accueil {
-  max-width: 1440px; 
-} */
+
 .bloc1 {
-  background-color: #e3d9d0;
+  background-color: #ECE2DA;
   border-radius: 25% 25% 42% 48% / 0% 0% 9% 8%;
-  box-shadow: 0 10px 0 #dcd5cf;
+  box-shadow: 0 10px 0 rgb(220, 213, 207, 0.91);
   max-width: 1440px;
   width: 100vw;
 }
@@ -122,12 +110,12 @@ nav .menu {
 .droite {
   position: absolute;
   right: 27%;
-  top: 70%;
+  top: 60%;
 }
 .gauche {
   position: absolute;
   left: 27%;
-  top: 70%;
+  top: 60%;
 }
 
 /*************** accueil - section 2 *************/
@@ -157,7 +145,7 @@ nav .menu {
 /************* accueil - section 3 *****************/
 
 .bloc-gout {
-  background-color: #dcd5cf;
+  background-color: #ECE2DA;
   border-radius: 0% 0% 100% 100% / 97% 97% 3% 3%;
 }
 .titre-gouts {
@@ -225,9 +213,8 @@ nav .menu {
 /****************** section 4 ******************/
 .bloc-avis {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .titre-avis {
   font-size: 1.8rem;
@@ -240,13 +227,16 @@ nav .menu {
   margin-bottom: 60px;
 }
 .les-avis {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: 4rem;
+  gap: 10vw;
+  width: 90vw;
+  height: 100%;
 }
+/* .avis {
+  display: flex;
+} */
 .colonne {
   display: flex;
+ 
 }
 .image-avis {
   width: 126.28px;
@@ -302,7 +292,6 @@ footer {
   position: relative;
   width: 150px;
   height: 140px;
-  rotate: -70deg;
 }
 .section1-rencontre {
   padding-top: 4rem;
@@ -543,7 +532,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 80vw;
+  width: 75vw;
 }
 
 .infos {
@@ -552,13 +541,13 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  width: 90%;
 }
 .infos::after {
   content: "";
   position: absolute;
   border-left: 1px solid #fff;
-  right: -3rem;
+  right: -0.5rem;
   height: 80%;
   top: 15%;
 }
@@ -606,6 +595,13 @@ body {
   background-color: #c02e44;
 }
 
+.menu label {
+  display: none;
+}
+.menu label,
+#toggle {
+  display: none;
+}
 
 /********************** media menu *******************/
 @media screen and (max-width: 1024px) {
@@ -650,8 +646,6 @@ body {
   }
 }
 
-/*************************************** page nous rencontrer *************************/
-
 /* https://academy.lotincorp.biz/lessentiel-du-responsive-design-la-gestion-des-ecrans/ */
 
 /*@media screen and (max-width: 480px)*/
@@ -659,9 +653,11 @@ body {
 /*@media screen and (min-width: 769px) and (max-width: 1024px)*/
 /*@media screen and (min-width: 1025px)*/
 
-/********* mode smart phone ********/
+/************************ mode smart phone *******************/
 
-@media screen and (max-width: 768px) {
+/************ page nous rencontrer **************/
+
+@media screen and (max-width: 1024px) {
   .logo > a > img {
     height: 2vh;
     width: 30vw;
@@ -686,8 +682,29 @@ body {
     color: #313332;
     font-size: small;
   }
+  .image-form {
+    z-index: -1;
+  }
   #container {
     width: fit-content;
+  }
+  /************************* page accueil ***********/
+  .titre-boisson , .description-titre , .titre-gouts , .titre-avis {
+    font-size: 1.5rem;
+  }
+  .droite , .gauche {
+    display: none;
+  }
+   
+  .description-para , .parag-gouts {
+    font-size: 1rem;
+  }
+  
+  .les-avis {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
   .bloc-rencontre {
     display: flex;
@@ -718,6 +735,7 @@ body {
   .wpcf7-form > p > label > span > textarea {
     width: 90vw;
   }
+  
   /************ page commandrer ***********/
   .cmd {
     display: flex;
@@ -725,12 +743,12 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .infos-livraison {
+  /* .infos-livraison {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: fit-content;
-  }
+  } */
   .infos input {
     width: 100%;
   }
@@ -739,22 +757,14 @@ body {
   }
 }
 
-/********************** mode tablette ******************/
 
-/********* page nous rencontrer ***********/
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 1025px) {
+
+  /********* page nous rencontrer ***********/
   .titre-bloc-rencontrer {
     font-size: calc(100% + 1vw);
   }
-  .image_bloc_equipe {
-    display: none;
-  }
-  .image-form {
-    position: relative;
-    left: -20%;
-    bottom: 15%;
-    z-index: 1;
-  }
+  
   /******************************* page commander **************************/
   .cmd {
     display: flex;
@@ -762,26 +772,18 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .infos-livraison {
+  /* .infos-livraison {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: fit-content;
+    gap: 6rem;
+  } */
+  /* .infos h2 {
+    width: auto;
   }
   .infos input {
     width: 100%;
-  }
-  ::after {
-    display: none;
-  }
-}
-@media screen and (min-width: 1025px) {
-.infos-livraison {
-  display: flex;
-  width: fit-content;
-  gap: 6rem;
-}
-.infos h2 {
-  width: auto;
-}
+  } */
+  
 }
