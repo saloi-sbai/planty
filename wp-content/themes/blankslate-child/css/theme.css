@@ -85,7 +85,7 @@ nav .menu {
 /*************** accueil - section 1 *************/
 
 .bloc1 {
-  background-color: #ECE2DA;
+  background-color: #ece2da;
   border-radius: 25% 25% 42% 48% / 0% 0% 9% 8%;
   box-shadow: 0 10px 0 rgb(220, 213, 207, 0.91);
   max-width: 1440px;
@@ -145,7 +145,7 @@ nav .menu {
 /************* accueil - section 3 *****************/
 
 .bloc-gout {
-  background-color: #ECE2DA;
+  background-color: #ece2da;
   border-radius: 0% 0% 100% 100% / 97% 97% 3% 3%;
 }
 .titre-gouts {
@@ -236,7 +236,6 @@ nav .menu {
 } */
 .colonne {
   display: flex;
- 
 }
 .image-avis {
   width: 126.28px;
@@ -479,7 +478,12 @@ body {
   margin-bottom: 70px;
   padding-top: 70px;
 }
+
 /******************************* section commande ***********************/
+.cmd-images,
+hr {
+  width: 70vw;
+}
 .cmd-images h2,
 .infos h2 {
   text-align: left;
@@ -532,7 +536,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 75vw;
+  width: 70vw;
 }
 
 .infos {
@@ -689,17 +693,31 @@ body {
     width: fit-content;
   }
   /************************* page accueil ***********/
-  .titre-boisson , .description-titre , .titre-gouts , .titre-avis {
+  .titre-boisson,
+  .description-titre,
+  .titre-gouts,
+  .titre-avis,
+  .cmd-titre {
     font-size: 1.5rem;
   }
-  .droite , .gauche {
+  .cmd-images h2 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .infos h2 {
+    font-size: 1.6rem;
+    width: fit-content;
+  }
+  .droite,
+  .gauche {
     display: none;
   }
-   
-  .description-para , .parag-gouts {
+
+  .description-para,
+  .parag-gouts {
     font-size: 1rem;
   }
-  
+
   .les-avis {
     display: flex;
     align-items: center;
@@ -735,7 +753,7 @@ body {
   .wpcf7-form > p > label > span > textarea {
     width: 90vw;
   }
-  
+
   /************ page commandrer ***********/
   .cmd {
     display: flex;
@@ -743,12 +761,12 @@ body {
     align-items: center;
     justify-content: center;
   }
-  /* .infos-livraison {
+  .infos-livraison {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: fit-content;
-  } */
+  }
   .infos input {
     width: 100%;
   }
@@ -757,14 +775,12 @@ body {
   }
 }
 
-
 @media screen and (min-width: 1025px) {
-
   /********* page nous rencontrer ***********/
   .titre-bloc-rencontrer {
     font-size: calc(100% + 1vw);
   }
-  
+
   /******************************* page commander **************************/
   .cmd {
     display: flex;
@@ -785,5 +801,4 @@ body {
   .infos input {
     width: 100%;
   } */
-  
 }
